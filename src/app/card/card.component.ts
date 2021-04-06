@@ -22,7 +22,7 @@ export class CardComponent implements OnInit {
   }
 
   isBigDamage(): boolean {
-    return this.pokemon.damage >= 50;
+    return (this.pokemon.damage >= 50);
   }
 
 }
