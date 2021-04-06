@@ -1,9 +1,9 @@
-import { Directive, ElementRef, Renderer2, Input } from '@angular/core';
+import { Directive, ElementRef, Input, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[appRedBorder]'
 })
-export class RedBorderDirective {
+export class RedBorderDirective implements OnInit {
   private elRef: ElementRef;
   @Input() options = false;
 
@@ -11,8 +11,8 @@ export class RedBorderDirective {
     this.elRef = el;
   }
 
-  OnInit(renderer: Renderer2): void {
-    if (true) {
+  ngOnInit(): void {
+    if (this.options) {
       this.elRef.nativeElement.style.border = 'solid 4px red';
     }
   }

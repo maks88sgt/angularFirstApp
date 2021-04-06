@@ -17,7 +17,7 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggleCatchedStatus(): void {
+  switchCatchedStatus(): void {
     this.catchedStatus = !this.catchedStatus;
   }
 

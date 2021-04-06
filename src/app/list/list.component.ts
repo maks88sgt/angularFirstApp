@@ -62,7 +62,7 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggleShowMode(): void {
+  switchShowMode(): void {
     this.showWithPictures = !this.showWithPictures;
   }
 
