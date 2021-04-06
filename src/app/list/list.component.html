@@ -1,0 +1,9 @@
+<h2 style="margin-top: 15px">List of pokemons</h2>
+<button class="btn btn-info" style="margin-bottom: 10px" (click)="toggleShowMode()">Toggle show mode</button>
+<div class="container">
+  <div *ngFor="let pokemon of pokemons">
+    <app-card
+      [pokemon]="pokemon"
+      [showWithPictures]="showWithPictures"></app-card>
+  </div>
+</div>

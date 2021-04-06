@@ -1,0 +1,9 @@
+  <div class="card" >
+    <div>
+      <h3 appRedBorder [options]="isBigDamage()">{{ pokemon.name }}</h3>
+      <div>
+        <img *ngIf="showWithPictures" src="../../assets/images/pokemons/{{ pokemon.id }}.png" alt="" width="100">
+      </div>
+      <button class="btn btn-primary" (click)="toggleCatchedStatus()">{{ catchedStatus ? 'Let go' : 'Catch'}}</button>
+    </div>
+  </div>
